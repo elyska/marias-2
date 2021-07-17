@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lízaný mariáš</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+
+    <style>
+        body{
+            width: 1536px;
+            background-image: url(assets/table.jpg);
+            background-repeat: no-repeat;
+            background-size: 1536px;
+        }
+        #window{
+            height: 700px;
+            width: 900px;
+            /*background: saddlebrown;
+            /*margin: auto;*/
+        }
+
+        .cards{
+            /*background: yellow;*/
+            width: 100%;
+            height: 225px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+
+        #table{
+            width: 100%;
+            height: 250px;
+            /*background: dimgray;*/
+            padding: 10px;
+            position: relative;
+        }
+
+        #cards-on-table {
+            width: 100%;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            display: flex;
+        }
+
+        .karta{
+            width: 93px;
+            height: 157px;
+            margin: 5px;
+            background-size: 100%;
+            border-radius: 10px;
+        }
+
+        .karta:hover{
+            cursor: pointer;
+        }
+
+        .right{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .left{
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+
+        .deck{
+            background-image: url(assets/rub.jpg);
+        }
+
+        #game{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin: 10px;
+            /*display: none;*/
+        }
+
+        #side-1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+        }
+
+        #deck-1{
+        }
+
+        #hlasky-1{
+        }
+
+        #side-2{
+            display: flex;
+        }
+
+        #deck-2{
+            /*margin-top: 486px;*/
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        #hlasky-2{
+            position: absolute;
+            bottom: 0;
+            right: 103px;
+        }
+
+        #game-over{
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /*#initialScreen{
+            color: white;
+            margin-top: 300px;
+        }*/
+    </style>
+
+
+</head>
+<body>
+<!--
+<div id="initialScreen" class="h-100">
+    <div class="d-flex flex-column align-items-center justify-content-center h-100">
+        <h1>Lízaný mariáš</h1>
+        <button type="submit" class="btn btn-success" id="newGameButton">Create New Game</button>
+        <div>OR</div>
+        <div class="form-group">
+            <input type="text" placeholder="Enter Game Code" id="gameCodeInput"/>
+        </div>
+        <button type="submit" class="btn btn-success" id="joinGameButton">
+            Join Game
+        </button>
+    </div>
+</div>-->
+
+<div id="game">
+    <!---<p>Your game code is: <span id="gameCodeDisplay"></span></p>-->
+    <div id="side-1">
+        <div id="deck-1">
+        </div>
+        <div id="hlasky-1">
+        </div>
+    </div>
+
+    <div id="window">
+        <div class="cards" id="player-cards"></div>
+
+        <div id="table">
+
+            <div id="cards-on-table">
+
+                <div class="left">
+                    <div class="karta" id="vylozena-karta-1"></div>
+                    <div class="karta" id="vylozena-karta-2"></div>
+                </div>
+
+                <div class="right">
+                    <div class="karta deck" id="main-deck"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cards" id="player-cards-2"></div>
+    </div>
+
+    <div id="side-2">
+        <div id="hlasky-2">
+        </div>
+        <div id="deck-2">
+        </div>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js" type="module"></script>
+
+</body>
+</html>
