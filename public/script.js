@@ -47,7 +47,7 @@ joinGameBtn.addEventListener('click', joinGame);
 
 
 function changeTrumf(data){
-    console.log(data);
+    //console.log(data);
     if(data.playerNumber === 0 && playerNumber === 0){
         //zmenit horni radu
         $("#player-cards").children().eq(data.index).css("background-image", 'url(assets/'
