@@ -105,6 +105,23 @@ function init(){
 
 function displayScore(scores){
     $("#table").append('<p id="game-over">Konec hry<br><br>Hráč 1: ' + scores[0] + '<br>Hráč 2: ' + scores[1] + '</p>');
+    
+    if(scores[0] > scores[1]){
+        if(playerNumber === 0){
+            $("#table").append('<p id="message">Gratuluju! Jsi nejlepší!</p>');
+        }
+        else if(playerNumber === 1){
+            $("#table").append('<p id="message">Nemehlo!</p>');
+        }
+    }
+    if(scores[1] > scores[0]){
+        if(playerNumber === 0){
+            $("#table").append('<p id="message">Nemehlo!</p>');
+        }
+        else if(playerNumber === 1){
+            $("#table").append('<p id="message">Gratuluju! Jsi nejlepší!</p>');
+        }
+    }
 }
 
 function displayHlaska(hlasky){
