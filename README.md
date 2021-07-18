@@ -1,2 +1,1 @@
-"# marias-2" 
-"# marias-3" 
+Funkční verze lízanýho mariášku
