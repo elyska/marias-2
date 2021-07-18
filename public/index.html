@@ -26,6 +26,7 @@
             background-image: url(assets/table.jpg);
             background-repeat: no-repeat;
             background-size: 1536px;
+            font-family: 'Roboto', sans-serif;
         }
         #window{
             height: 700px;
@@ -97,7 +98,6 @@
             position: relative;
             justify-content: center;
             margin: 10px;
-            /*display: none;*/
         }
 
         #side-1{
@@ -134,72 +134,88 @@
             text-align: center;
             color: white;
             font-size: 40px;
-            font-family: 'Roboto', sans-serif;
         }
 
-        /*#initialScreen{
+        #initialScreen{
             color: white;
             margin-top: 300px;
-        }*/
+        }
+        #gameScreen{
+            display: none;
+        }
+
+        #code{
+            color: white;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
     </style>
 
 
 </head>
 <body>
-<!--
+
 <div id="initialScreen" class="h-100">
     <div class="d-flex flex-column align-items-center justify-content-center h-100">
         <h1>Lízaný mariáš</h1>
-        <button type="submit" class="btn btn-success" id="newGameButton">Create New Game</button>
-        <div>OR</div>
+        <button type="submit" class="btn btn-success" id="newGameButton">Nová hra</button>
+        <div>NEBO</div>
         <div class="form-group">
-            <input type="text" placeholder="Enter Game Code" id="gameCodeInput"/>
+            <input class="form-control" type="text" placeholder="Zadej kód" id="gameCodeInput"/>
         </div>
         <button type="submit" class="btn btn-success" id="joinGameButton">
-            Join Game
+            Přidat se
         </button>
     </div>
-</div>-->
+</div>
 
-<div id="game">
-    <!---<p>Your game code is: <span id="gameCodeDisplay"></span></p>-->
-    <div id="side-1">
-        <div id="deck-1">
+<div id="gameScreen">
+    <div id="game">
+        <p id="code"></p>
+        <div id="side-1">
+            <div id="deck-1">
+            </div>
+            <div id="hlasky-1">
+            </div>
         </div>
-        <div id="hlasky-1">
-        </div>
-    </div>
 
-    <div id="window">
-        <div class="cards" id="player-cards"></div>
+        <div id="window">
 
-        <div id="table">
+            <div class="cards" id="player-cards"></div>
 
-            <div id="cards-on-table">
+            <div id="table">
 
-                <div class="left">
-                    <div class="karta" id="vylozena-karta-1"></div>
-                    <div class="karta" id="vylozena-karta-2"></div>
-                </div>
+                <div id="cards-on-table">
 
-                <div class="right">
-                    <div class="karta deck" id="main-deck"></div>
+                    <div class="left">
+                        <div class="karta" id="vylozena-karta-1"></div>
+                        <div class="karta" id="vylozena-karta-2"></div>
+                    </div>
+
+                    <div class="right">
+                        <div class="karta deck" id="main-deck"></div>
+                    </div>
+
                 </div>
 
             </div>
 
+            <div class="cards" id="player-cards-2"></div>
         </div>
 
-        <div class="cards" id="player-cards-2"></div>
-    </div>
-
-    <div id="side-2">
-        <div id="hlasky-2">
-        </div>
-        <div id="deck-2">
+        <div id="side-2">
+            <div id="hlasky-2">
+            </div>
+            <div id="deck-2">
+            </div>
         </div>
     </div>
 </div>
+
 
 <script src="/socket.io/socket.io.js"></script>
 <script src="script.js" type="module"></script>

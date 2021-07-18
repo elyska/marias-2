@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e3148c7-1266-47d6-b357-4c762b94027e" name="Default Changelist" comment="" />
+    <list default="true" id="0e3148c7-1266-47d6-b357-4c762b94027e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +21,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1vLQ6mk2cNx6Es32oM310fkxImf" />
   <component name="ProjectViewState">
@@ -72,7 +80,38 @@
       <workItem from="1626458097330" duration="1779000" />
       <workItem from="1626459908619" duration="1243000" />
       <workItem from="1626462007195" duration="401000" />
-      <workItem from="1626506578337" duration="330000" />
+      <workItem from="1626506578337" duration="841000" />
+      <workItem from="1626528107149" duration="1772000" />
+      <workItem from="1626529913671" duration="1803000" />
+      <workItem from="1626531747922" duration="2203000" />
+      <workItem from="1626533992792" duration="1784000" />
+      <workItem from="1626535818242" duration="1777000" />
+      <workItem from="1626537628983" duration="1774000" />
+      <workItem from="1626539459442" duration="1782000" />
+      <workItem from="1626541284532" duration="1869000" />
+      <workItem from="1626543204017" duration="1770000" />
+      <workItem from="1626545017563" duration="1810000" />
+      <workItem from="1626546862224" duration="1523000" />
+      <workItem from="1626548669821" duration="957000" />
+      <workItem from="1626550522927" duration="110000" />
+      <workItem from="1626550715647" duration="1806000" />
+      <workItem from="1626552576095" duration="1803000" />
+      <workItem from="1626554419764" duration="1789000" />
+      <workItem from="1626556251150" duration="405000" />
+      <workItem from="1626603651589" duration="1778000" />
+      <workItem from="1626605463780" duration="1813000" />
+      <workItem from="1626607329132" duration="1810000" />
+      <workItem from="1626609172997" duration="1916000" />
+      <workItem from="1626611120552" duration="1776000" />
+      <workItem from="1626612934774" duration="937000" />
+      <workItem from="1626614117514" duration="1774000" />
+      <workItem from="1626615923269" duration="707000" />
+      <workItem from="1626617734653" duration="1778000" />
+      <workItem from="1626619544479" duration="499000" />
+      <workItem from="1626621581019" duration="1778000" />
+      <workItem from="1626623394088" duration="1782000" />
+      <workItem from="1626625203806" duration="1845000" />
+      <workItem from="1626627090565" duration="317000" />
     </task>
     <servers />
   </component>
@@ -94,18 +133,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server.js</url>
-          <line>208</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>134</line>
+          <line>230</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>122</line>
+          <url>file://$PROJECT_DIR$/public/script.js</url>
+          <line>94</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/script.js</url>
+          <line>69</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
