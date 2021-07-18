@@ -132,7 +132,7 @@ function getLastCards(newCards){
 }
 
 function getNewCards(newCards){
-    console.log(newCards);
+    //console.log(newCards);
     if(playerNumber === 0){
         $("#player-cards").append('<div class="karta" style="background-image: url(assets/'
             + newCards[0].suit + '_' + newCards[0].value + '.jpg)"></div>');
@@ -159,7 +159,7 @@ function takeCards(){
         if($("#vylozena-karta-1").css("background-image") !== "none"
             && $("#vylozena-karta-2").css("background-image") !== "none" && turn === playerNumber + 1){
             socket.emit("cards taken");
-            console.log("cards taken emitted");
+            //console.log("cards taken emitted");
         }
     });
 }
@@ -219,7 +219,7 @@ function takeTurns(){
     });
 
     $(document).on("click", "#trumf", function () {
-        console.log("trumf clicked by player " + playerNumber);
+        //console.log("trumf clicked by player " + playerNumber);
         socket.emit("trumf clicked", playerNumber);
     });
 }
