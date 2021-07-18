@@ -47,7 +47,7 @@ joinGameBtn.addEventListener('click', joinGame);
 
 
 function changeTrumf(data){
-    //console.log(data);
+    console.log(data);
     if(data.playerNumber === 0 && playerNumber === 0){
         //zmenit horni radu
         $("#player-cards").children().eq(data.index).css("background-image", 'url(assets/'
@@ -105,7 +105,6 @@ function init(){
 
 function displayScore(scores){
     $("#table").append('<p id="game-over">Konec hry<br><br>Hráč 1: ' + scores[0] + '<br>Hráč 2: ' + scores[1] + '</p>');
-    
     if(scores[0] > scores[1]){
         if(playerNumber === 0){
             $("#table").append('<p id="message">Gratuluju! Jsi nejlepší!</p>');
@@ -149,7 +148,7 @@ function getLastCards(newCards){
 }
 
 function getNewCards(newCards){
-    //console.log(newCards);
+    console.log(newCards);
     if(playerNumber === 0){
         $("#player-cards").append('<div class="karta" style="background-image: url(assets/'
             + newCards[0].suit + '_' + newCards[0].value + '.jpg)"></div>');
@@ -176,7 +175,7 @@ function takeCards(){
         if($("#vylozena-karta-1").css("background-image") !== "none"
             && $("#vylozena-karta-2").css("background-image") !== "none" && turn === playerNumber + 1){
             socket.emit("cards taken");
-            //console.log("cards taken emitted");
+            console.log("cards taken emitted");
         }
     });
 }
@@ -236,7 +235,7 @@ function takeTurns(){
     });
 
     $(document).on("click", "#trumf", function () {
-        //console.log("trumf clicked by player " + playerNumber);
+        console.log("trumf clicked by player " + playerNumber);
         socket.emit("trumf clicked", playerNumber);
     });
 }
