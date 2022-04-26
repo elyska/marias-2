@@ -1,1 +1,1 @@
-Funkční verze lízanýho mariášku
+
