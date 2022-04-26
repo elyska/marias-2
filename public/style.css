@@ -1,0 +1,140 @@
+body{
+    /*width: 1536px;
+    background-image: url(assets/table.jpg);
+    background-repeat: no-repeat;
+    background-size: 1536px;*/
+    background-image: url(assets/table.jpg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+#window{
+    height: 700px;
+    width: 900px;
+    /*background: saddlebrown;
+    /*margin: auto;*/
+}
+
+.cards{
+    /*background: yellow;*/
+    width: 100%;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+#table{
+    width: 100%;
+    height: 250px;
+    /*background: dimgray;*/
+    padding: 10px;
+    position: relative;
+}
+
+#cards-on-table {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.karta{
+    width: 93px;
+    height: 157px;
+    margin: 5px;
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+.karta:hover{
+    cursor: pointer;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.deck{
+    background-image: url(assets/rub.jpg);
+}
+
+#game{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 10px;
+}
+
+#side-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+#deck-1{
+}
+
+#hlasky-1{
+}
+
+#side-2{
+    display: flex;
+}
+
+#deck-2{
+    /*margin-top: 486px;*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#hlasky-2{
+    position: absolute;
+    bottom: 0;
+    right: 103px;
+}
+
+#game-over{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+#message{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+#initialScreen{
+    color: white;
+    margin-top: 300px;
+}
+#gameScreen{
+    display: none;
+}
+
+#code{
+    color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
